@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curtis Atchley</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/aya7jzp.css">
+    <script src="https://kit.fontawesome.com/bc134222d9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo/logo.svg" alt="Curtis Atchley logo"/></a>
+                <a href="index.html">Curtis Atchley</a>
+            </div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>  
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div class="dropdown-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </li>
+        </div>
+    </section>
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle-btn")
+        const toggleBtnIcon = document.querySelector(".toggle-btn i")
+        const dropDownMenu = document.querySelector(".dropdown-menu")
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open")
+            const isOpen = dropDownMenu.classList.contains("open")
+
+            toggleBtnIcon.classList = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars"
+        }
+    </script>
+
+<!-- HOME SECTION-->
+
+    <section class="hero">
+        <h1>Hi, I'm Curtis Atchley</h1>
+        <p>An aspiring front end web developer building websites for small businesses in central Illinois.</p>
+        <a href="#" class="button">Contact</a>
+        <div class="scroll-downs">
+            <div class="mousey">
+              <div class="scroller"></div>
+            </div>
+        </div>
+    </section>
+
+<!-- ABOUT SECTION-->
+
+    <section class="about" id="about">
+        <header>
+            <h2>About Me</h2>
+            <hr>
+            <p>Some info about me and what I do.</p>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h3>Hi there!</h3>
+                <p>I'm an apsiring frontend web developer. Right now, my skills enable me to build functional, attractive, and responsive websites. You can see examples of my work in the projects section.</p>
+                <p>I live in Canton, IL with my wife, Elliyah, who's a nurse at OSF. Besides web developement, I'm also a <a href="https://www.lakelandcanton.org/" target="_blank">pastor</a> in Canton, a chaplain at Graham Hosptial, and a <a href="https://www.atchleymusicstudio.com/" target="_blank">piano teacher</a>.</p>
+                <p>My goal as a web developer is to help small businesses adapt to the online world. That's why I offer my services at affordable rates.</p>
+                <a href="#" class="button">Contact</a>
+            </div>
+            <div class="skills">
+                <h3>My Skills</h3>
+                <div class="skill-items">
+                    <div class="item">HTML</div>
+                    <div class="item">CSS</div>
+                    <div class="item">Responsive Design</div>
+                    <div class="item">Wix Editor X</div>
+                    <div class="item">Adobe Illustrator</div>
+                    <div class="item">Adobe Photoshop</div>
+                    <div class="item">Adobe Premier Pro</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- PROJECTS SECTION-->
+
+    <section class="projects-bg" id="projects">
+        <div class="projects">
+            <header>
+                <h2>Projects</h2>
+                <hr>
+                <p>See some of the work I've done.</p>
+            </header>
+            <div class="content">
+               <div class="content-row">
+                <div class="content-row-img">
+                    <img src="images/Lakeland Mac.png" alt="A photo of Lakeland Community Church's website on a laptop screen">
+                </div>
+                <div class="content-row-text">
+                    <h3>Lakeland Community Church</h3>
+                    <p>Lakeland's new site was designed with a grid layout to look like buttons. The goal was clarity and use of ease so potential visitors could learn what's really important.</p>
+                    <a href="https://www.lakelandcanton.org/" target="_blank" class="button">Visit Site</a>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- CONTACT SECTION-->
+
+<!-- FOOTER SECTION -->
+
+    <footer>
+        <h4>Curtis Atchley</h4>
+        <p>An aspiring front end web developer building websites for small businesses in central Illinois.</p>
+        <hr>
+        <p>© Copyright 2023. Made by Curtis Atchley.</p>
+    </footer>
+
+</body>

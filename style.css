@@ -396,7 +396,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
 }
 
 .projects header hr {
@@ -423,9 +423,11 @@ body {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 8rem;
     align-items: center;
 }
+
+
 
 .projects .content .content-row .content-row-img {
     overflow: hidden;
@@ -494,9 +496,6 @@ body {
     color: #333333;
     background-image: url(backgrounds/stripes-bg.svg);
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .contact header {
@@ -523,13 +522,21 @@ body {
     font-size: 1.5rem;
 }
 
-.contact .contact-form {
-    display: flex;
-    justify-content: center;
+.contact .contact-form .contact-form-container {
+    box-shadow: (100,100,111,.2) 0 7px 29px 0;
+    padding: 4rem;
+    max-width: 80rem;
+    width: 95%;
+    border-radius: 5px;
+    margin: 5rem auto 0 auto;
+    width: 95%;
+    border-radius: 5px;
+    margin: 5rem auto 0 auto;
+    text-align: center;
 }
 
 .contact .contact-form form {
-    padding: 4rem;
+    margin-bottom: 4rem;
     background-color: white;
     border-radius: 10px;
 }

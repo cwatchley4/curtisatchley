@@ -244,7 +244,7 @@ body {
 
 /* RESPONSIVE HERO */
 
-@media (max-width: 430px) {
+@media (max-width: 800px) {
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -376,7 +376,7 @@ body {
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 800px) {
     .about {
         padding: 3rem 3.25rem;
     }
@@ -490,7 +490,7 @@ body {
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 800px) {
     .projects {
         padding: 3rem 3.25rem;
     }
@@ -500,6 +500,10 @@ body {
     .projects .content .content-row {
         gap: 1.75rem;
         margin-bottom: 3.5rem;
+        margin-top: 0;
+    }
+    .projects .content .content-row:last-child {
+        margin-bottom: 0;
     }
 }
 
@@ -575,6 +579,21 @@ body {
     background: #f0f0f0;
     border-radius: 10px;
     font-weight: 600;
+}
+
+/* CONTACT RESPONSIVE DESIGN */
+
+@media (max-width:800px) {
+    .contact {
+        padding: 1rem;
+    }
+    .contact header {
+        margin-bottom: 1rem;
+    }
+    .contact .contact-form-container {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
 }
 
 /* FOOTER SECTION */

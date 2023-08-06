@@ -363,7 +363,10 @@ body {
 
 @media (max-width: 430px) {
     .about {
-        padding: 2rem 3.25rem;
+        padding: 3rem 3.25rem;
+    }
+    .about .content {
+        margin: 1rem 0;
     }
     .about header {
         margin-bottom: 1rem;
@@ -421,7 +424,8 @@ body {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 5rem;
-    margin-bottom: 11rem;
+    margin-bottom: 5rem;
+    align-items: center;
 }
 
 .projects .content .content-row .content-row-img {
@@ -469,7 +473,73 @@ body {
     }
 }
 
+@media (max-width: 430px) {
+    .projects {
+        padding: 3rem 3.25rem;
+    }
+    .projects header {
+        margin-bottom: 3rem;
+    }
+    .projects .content .content-row {
+        gap: 1.75rem;
+        margin-bottom: 3.5rem;
+    }
+}
 
+/* CONTACT SECTION */
+
+.contact {
+    padding: 8rem 5rem;
+    margin: auto;
+    max-width: 85rem;
+    color: #333333;
+    background-image: url(backgrounds/stripes-bg.svg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.contact header hr {
+    margin: 2rem 0;
+    width: 5rem;
+    border: 3px solid #FF901B;
+    border-radius: 10px;
+}
+
+.contact header h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.contact header p {
+    font-size: 1.5rem;
+}
+
+.contact .contact-form {
+    display: flex;
+    justify-content: center;
+}
+
+.contact .contact-form form {
+    padding: 4rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contact .contact-form .input-box input[type=text], input[type=textarea] {
+    padding: .5rem .25rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
 
 /* FOOTER SECTION */
 

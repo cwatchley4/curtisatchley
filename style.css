@@ -548,7 +548,7 @@ body {
     margin: 5rem auto 0 auto;
     max-width: 50rem;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .contact .contact-form-container .contact-form {

@@ -157,10 +157,10 @@
             <p>Submit the form below and I will contact you.</p>
         </header>
         <div class="contact-form-container">
-            <form action="#" class="contact-form">
+            <form action="#" class="contact-form" id="contact">
                 <div class="contact-form-field">
                     <label class="contact-form-label" for="name">Name</label>
-                    <input type="text" class="contact-form-input" name="name" id="name" placeholder="Enter Your Name">
+                    <input type="text" class="contact-form-input" name="name" id="name" placeholder="Enter Your Name" required>
                 </div>
                 <div class="contact-form-field">
                     <label class="contact-form-label" for="email">Email</label>
@@ -170,10 +170,8 @@
                     <label class="contact-form-label" for="message">Messsage</label>
                     <textarea name="" id="" cols="30" rows="10" class="contact-form-input" required placeholder="Enter Your Message"></textarea>
                 </div>
+                <button type="submit" class="button">Submit</button>
             </form>
-            <button type="submit" class="button">
-                Submit
-            </button>
         </div>
     </section>
 

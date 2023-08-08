@@ -1,5 +1,15 @@
 RewriteEngine on
 
-RewriteCond %{REQUEST_FILENAME} !-f 
+# index redirect 
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/ 
+RewriteRule ^index\.html$ http://%{HTTP_HOST}/ [R=301,L]
+
+# add a trailing slash to non files
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*?[^/])$ %{REQUEST_URI}/ [L,R=301,NE]
+
+# add html internally
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d 
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule ^([^.]+)/$ $1.html [L]

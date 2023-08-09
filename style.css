@@ -30,14 +30,29 @@ body {
     display: inline-block;
 }
 
-.button:hover {
+.button-inv {
+    background-color: white;
+    color: #FF901B;
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s ease;
+    display: inline-block;
+}
+
+.button:hover, .button-inv:hover {
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -o-transform: scale(1.05);
     transform: scale(1.05);
 }
 
-.button:active {
+.button:active, .button-inv:active {
     -webkit-transform: scale(.95);
     -moz-transform: scale(.95);
     -o-transform: scale(.95);
@@ -136,7 +151,7 @@ body {
 }
 
 .dropdown-menu.open {
-    height: 181.56px;
+    height: 226.95px;
     z-index: 1;
 }
 
@@ -162,7 +177,7 @@ body {
 
 /* RESPONSIVE NAV */
 
-@media (max-width: 800px) {
+@media (max-width: 915px) {
     .navbar .links {
         display: none;
         color: #FF901B;
@@ -504,6 +519,112 @@ body {
     }
     .projects .content .content-row:last-child {
         margin-bottom: 0;
+    }
+}
+
+/* PRICING SECTION */
+
+.pricing {
+    background-color: #FF901B;
+    color: white;
+    padding: 8rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.pricing header hr {
+    margin: 2rem 0;
+    width: 5rem;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.pricing header h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.pricing header p {
+    font-size: 1.5rem;
+}
+
+.panel {
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    padding: 2rem 2rem;
+    width: 100%;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.panel:last-child {
+    margin-bottom: 0;
+}
+
+.pricing-plan {
+    width: 250px;
+}
+
+.pricing-img {
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.pricing-header {
+    color: #333333;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.pricing-features {
+    margin: 2rem 1rem;
+    color: #333333;
+}
+
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: .75rem;
+    line-height: 1.5;
+    padding: 1rem 0;
+    border-top: 1px solid #fbc992;
+}
+
+.pricing-features-item:last-child {
+    border-top: 1px solid #fbc992;
+    border-bottom: 1px solid #fbc992;
+}
+
+.pricing-price {
+    font-size: 2rem;
+    margin: 1rem;
+    font-weight: 700;
+    color: #FF901B;
+    display: block;
+}
+
+/* PRICING SECTION RESPONSIVE DESIGN */
+
+@media (max-width: 889px) {
+    .panel {
+        flex-direction: column;
+        align-items: center;
+        max-width: 20rem;
     }
 }
 

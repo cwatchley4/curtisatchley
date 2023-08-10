@@ -539,6 +539,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 6rem;
+}
+
+.pricing header:last-child {
     margin-bottom: 2rem;
 }
 
@@ -570,10 +574,21 @@ body {
     text-align: center;
     justify-content: space-evenly;
     margin-bottom: 2rem;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.08);
+    transition: .3s ease-in-out;
 }
 
 .panel:last-child {
     margin-bottom: 0;
+}
+
+.panel:hover {
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.15);;
+}
+
+.panel-header {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 .pricing-plan {
@@ -670,6 +685,12 @@ body {
     max-width: 50rem;
     border-radius: 10px;
     text-align: left;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.08);
+    transition: .3s ease-in-out;
+}
+
+.contact .contact-form-container:hover {
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.15);
 }
 
 .contact .contact-form-container .contact-form {

@@ -526,7 +526,7 @@ body {
 
 /* PRICING SECTION */
 
-.pricing {
+/* .pricing {
     background-color: #FF901B;
     color: white;
     padding: 8rem 4rem;
@@ -668,7 +668,7 @@ body {
     display: block;
 }
 
-/* PRICING SECTION RESPONSIVE DESIGN */
+PRICING SECTION RESPONSIVE DESIGN
 
 @media (max-width: 889px) {
     .panel {
@@ -702,7 +702,7 @@ body {
     .pricing header {
         margin-bottom: 3rem;
     }
-}
+} */
 
 /* CONTACT SECTION */
 

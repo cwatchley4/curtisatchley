@@ -458,7 +458,9 @@ body {
     align-items: center;
 }
 
-
+.projects .content .content-row:last-child {
+    margin-bottom: 0;
+}
 
 .projects .content .content-row .content-row-img {
     overflow: hidden;
@@ -669,12 +671,6 @@ body {
 /* PRICING SECTION RESPONSIVE DESIGN */
 
 @media (max-width: 889px) {
-    .pricing {
-        padding: 3rem 3.25rem;
-    }
-    .pricing header {
-        margin-bottom: 3rem;
-    }
     .panel {
         flex-direction: column;
         align-items: center;
@@ -696,6 +692,15 @@ body {
     }
     .build-features-item:nth-of-type(even) {
         border-bottom: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .pricing {
+        padding: 3rem 3.25rem;
+    }
+    .pricing header {
+        margin-bottom: 3rem;
     }
 }
 

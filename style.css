@@ -447,6 +447,12 @@ body {
     font-size: 1.5rem;
 }
 
+.projects header .note {
+    font-size: .9rem;
+    max-width: 20rem;
+    font-style: italic;
+}
+
 .projects .content {
     max-width: 1200px;
 }

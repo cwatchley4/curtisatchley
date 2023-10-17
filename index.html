@@ -29,7 +29,7 @@
     <script src="//code.tidio.co/xhxvxwsymfvfgb0h8mvfbsufmunkbjjd.js" async></script>
 </head>
 <body>
-    <section class="header">
+    <header class="header">
         <nav class="navbar">
             <div class="logo">
                 <a href="/"><img src="logo/logo.svg" alt="Curtis Atchley logo"/></a>
@@ -54,25 +54,10 @@
             <li><a href="#contact">Contact</a></li>
             </li>
         </div>
-    </section>
-
-    <script>
-        const toggleBtn = document.querySelector(".toggle-btn")
-        const toggleBtnIcon = document.querySelector(".toggle-btn i")
-        const dropDownMenu = document.querySelector(".dropdown-menu")
-
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle("open")
-            const isOpen = dropDownMenu.classList.contains("open")
-
-            toggleBtnIcon.classList = isOpen
-            ? "fa-solid fa-xmark"
-            : "fa-solid fa-bars"
-        }
-    </script>
+    </header>
 
 <!-- HOME SECTION-->
-
+<main>
     <section class="hero">
         <h1>Hi, I'm Curtis Atchley</h1>
         <p>An aspiring front end web developer building websites for small businesses in central Illinois.</p>
@@ -105,6 +90,7 @@
                 <div class="skill-items">
                     <div class="item">HTML</div>
                     <div class="item">CSS</div>
+                    <div class="item">JavaScript</div>
                     <div class="item">Responsive Design</div>
                     <div class="item">Wix Editor X</div>
                     <div class="item">Adobe Illustrator</div>
@@ -142,7 +128,7 @@
                 </div>
                 <div class="content-row-text">
                     <h3>Precision Lawns</h3>
-                    <p>Disclaimer: Precision Lawn's is my dad's lawn care business. Built with HTML and CSS, the main requirement was integration of an online booking system.</p>
+                    <p>Disclaimer: Precision Lawn's is my dad's lawn care business. Built with HTML, CSS, and JavaScript, the main requirement was the integration of an online booking system and a chat widget.</p>
                     <a href="https://www.precisionlawns309.com" target="_blank" class="button">Visit Site</a>
                 </div>
             </div>
@@ -152,7 +138,7 @@
                 </div>
                 <div class="content-row-text">
                     <h3>Webb's Valley View Campground</h3>
-                    <p>Built with HTML and CSS, Webb's Valley View Campground's site features the integration of an online reservation system with payment gateway.</p>
+                    <p>Built with HTML, CSS, and Javascript, Webb's Valley View Campground's site features the integration of an online reservation system with payment gateway and a chat widget.</p>
                     <a href="https://www.webbsvvcamping.com" target="_blank" class="button">Visit Site</a>
                 </div>
             </div>
@@ -261,6 +247,7 @@
             </form>
         </div>
     </section>
+</main>
 
 <!-- FOOTER SECTION -->
     
@@ -270,5 +257,5 @@
         <hr>
         <p>© Copyright 2023. Made by Curtis Atchley.</p>
     </footer>
-
+<script src="script.js"></script>
 </body>

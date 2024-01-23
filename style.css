@@ -153,8 +153,7 @@ body {
 }
 
 .dropdown-menu.open {
-  /* height: 226.95px; */
-  height: 182px;
+  height: 226.95px;
   z-index: 1;
 }
 
@@ -178,7 +177,7 @@ body {
 
 /* RESPONSIVE NAV */
 
-@media (max-width: 915px) {
+@media (max-width: 1015px) {
   .navbar .links {
     display: none;
     color: #ff901b;

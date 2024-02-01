@@ -7,6 +7,31 @@ const localStorageTheme = localStorage.getItem("theme");
 const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
 // const buttonIcon = document.querySelector("data-theme-icon");;
 
+const isDarkMode = () =>
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+const runColorMode = (fn) => {
+  if (!window.matchMedia) {
+    return;
+  }
+  const query = window.matchMedia("(prefers-color-scheme: dark)");
+  fn(query.matches);
+  query.addEventListener("change", (event) => fn(event.matches));
+};
+
+runColorMode((isDarkMode) => {
+  if (isDarkMode) {
+    document.querySelector("html").setAttribute("data-theme", "dark");
+    button.setAttribute("class", "fa-solid fa-sun");
+    button.style["color"] = "#ff901b";
+  } else {
+    document.querySelector("html").setAttribute("data-theme", "light");
+    button.style["color"] = "#333";
+    button.setAttribute("class", "fa-solid fa-moon");
+  }
+});
+
 function calculateSettingAsThemeString({
   localStorageTheme,
   systemSettingDark,
@@ -29,8 +54,6 @@ let currentThemeSetting = calculateSettingAsThemeString({
 
 function updateButton(buttonEl, isDark) {
   const newIcon = isDark ? "fa-solid fa-sun" : "fa-solid fa-moon";
-  // use an aria-label if you are omitting text on the button
-  // and using a sun/moon icon, for example
   buttonEl.setAttribute("class", newIcon);
   const iconColor = isDark
     ? (buttonEl.style["color"] = "#ff901b")

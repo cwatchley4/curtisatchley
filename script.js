@@ -5,7 +5,7 @@
 const button = document.querySelector("[data-theme-icon]");
 const localStorageTheme = localStorage.getItem("theme");
 const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
-// const buttonIcon = document.querySelector("data-theme-icon");
+// const buttonIcon = document.querySelector("data-theme-icon");;
 
 function calculateSettingAsThemeString({
   localStorageTheme,
@@ -13,12 +13,19 @@ function calculateSettingAsThemeString({
 }) {
   if (localStorageTheme !== null) {
     return localStorageTheme;
-  } else if (systemSettingDark.matches) {
+  }
+
+  if (systemSettingDark.matches) {
     return "dark";
   } else {
     return "light";
   }
 }
+
+let currentThemeSetting = calculateSettingAsThemeString({
+  localStorageTheme,
+  systemSettingDark,
+});
 
 function updateButton(buttonEl, isDark) {
   const newIcon = isDark ? "fa-solid fa-sun" : "fa-solid fa-moon";
@@ -33,11 +40,6 @@ function updateButton(buttonEl, isDark) {
 function updateThemeOnHtmlEl({ theme }) {
   document.querySelector("html").setAttribute("data-theme", theme);
 }
-
-let currentThemeSetting = calculateSettingAsThemeString({
-  localStorageTheme,
-  systemSettingDark,
-});
 
 button.addEventListener("click", (event) => {
   const newTheme = currentThemeSetting === "dark" ? "light" : "dark";

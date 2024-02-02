@@ -856,7 +856,7 @@ PRICING SECTION RESPONSIVE DESIGN
 
 footer {
   background-color: var(--footer-bg-color);
-  color: var(--color-text);
+  color: white;
   padding: 2rem 2rem;
   display: flex;
   flex-direction: column;

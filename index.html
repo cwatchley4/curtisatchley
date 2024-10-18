@@ -25,12 +25,17 @@
     />
 
     <!-- Favicon -->
-    <link rel="icon" href="logo/favicon.ico" sizes="48x48" />
-    <link rel="icon" type="image/svg+xml" sizes="any" href="logo/logo.svg" />
-    <link rel="apple-touch-icon" href="logo/apple-touch-icon.png" />
+    <link rel="icon" href="assets/icons/favicon.ico" sizes="48x48" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      sizes="any"
+      href="assets/icons/logo.svg"
+    />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
 
     <!-- CSS Link -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Adobe Typekit -->
     <link rel="stylesheet" href="https://use.typekit.net/aya7jzp.css" />
@@ -63,55 +68,69 @@
     ></script>
   </head>
   <body>
-    <button class="theme-btn" type="button" aria-label="Change to dark theme">
+    <button
+      class="color-theme-btn"
+      type="button"
+      aria-label="Change to dark theme"
+    >
       <i data-theme-icon class="fa-solid fa-moon"></i>
     </button>
     <header class="header">
-      <nav class="navbar">
-        <div class="logo">
-          <a href="/"><img src="logo/logo.svg" alt="Curtis Atchley logo" /></a>
-          <a href="/">Curtis Atchley</a>
+      <nav class="header__nav">
+        <div class="header__logo-container">
+          <a href="/"
+            ><img
+              src="assets/icons/logo.svg"
+              alt="Curtis Atchley logo"
+              class="header__logo-img"
+          /></a>
+          <a href="/" class="header__logo-title">Curtis Atchley</a>
         </div>
-        <div class="links">
-          <a href="/">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
+        <div class="header__nav-links">
+          <a href="/" class="header__nav-link">Home</a>
+          <a href="#about" class="header__nav-link">About</a>
+          <a href="#projects" class="header__nav-link">Projects</a>
           <a
             href="https://billing.stripe.com/p/login/4gw8Abf8M3wIb2E9AA"
             target="_blank"
+            class="header__nav-link"
             >Client Portal</a
           >
-          <a href="#contact">Contact</a>
+          <a href="#contact" class="header__nav-link">Contact</a>
         </div>
-        <div class="toggle-btn">
+        <div class="header__nav-toggle-btn">
           <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
-      <div class="dropdown-menu">
-        <a href="/">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+      <div class="header__nav-dropdown-menu">
+        <a href="/" class="header__nav-dropdown-menu-link">Home</a>
+        <a href="#about" class="header__nav-dropdown-menu-link">About</a>
+        <a href="#projects" class="header__nav-dropdown-menu-link">Projects</a>
         <a
           href="https://billing.stripe.com/p/login/4gw8Abf8M3wIb2E9AA"
           target="_blank"
+          class="header__nav-dropdown-menu-link"
           >Client Portal</a
         >
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="header__nav-dropdown-menu-link">Contact</a>
       </div>
     </header>
 
-    <!-- HOME SECTION-->
-    <main>
+    <!-- HERO SECTION-->
+
+    <main class="main">
       <section class="hero">
-        <h1>Hi, I'm Curtis Atchley</h1>
-        <p>
-          A front end web developer that helps businesses in central Illinois
-          thrive.
-        </p>
-        <a href="#contact" class="button">Contact</a>
-        <div class="scroll-downs">
-          <div class="mousey">
-            <div class="scroller"></div>
+        <div class="hero__content-container">
+          <h1 class="hero__title">Hi, I'm Curtis Atchley</h1>
+          <p class="hero__subtitle">
+            A front end web developer that helps businesses in central Illinois
+            thrive.
+          </p>
+          <a href="#contact" class="btn btn--orange">Contact</a>
+          <div class="hero__mouse">
+            <div class="hero__mouse-outline">
+              <div class="hero__mouse-scroller"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -119,45 +138,53 @@
       <!-- ABOUT SECTION-->
 
       <section class="about" id="about">
-        <header>
-          <h2>About Me</h2>
-          <hr />
-          <p>Some info about me and what I do.</p>
+        <header class="about__header">
+          <h2 class="about__header-title">About Me</h2>
+          <hr class="about__header-hr" />
+          <p class="about__header-subtitle">
+            Some info about me and what I do.
+          </p>
         </header>
-        <div class="content">
-          <div class="text">
-            <h3>Hi there!</h3>
-            <p>
+        <div class="about__content">
+          <div class="about__text-container">
+            <h3 class="about__text-title">Hi there!</h3>
+            <p class="about__text-p">
               I'm a frontend web developer. My skills enable me to build
               functional, attractive, and responsive websites. You can see
               examples of my work in the projects section.
             </p>
-            <p>
+            <p class="about__text-p">
               I live in Canton, IL with my wife, Elliyah, who's a nurse. Besides
               web developement, I'm also a
-              <a href="https://www.lakelandcanton.org/" target="_blank"
+              <a
+                href="https://www.lakelandcanton.org/"
+                target="_blank"
+                class="text-link"
                 >pastor</a
               >, a chaplain at Graham Hospital, and a
-              <a href="https://www.atchleymusicstudio.com/" target="_blank"
+              <a
+                href="https://www.atchleymusicstudio.com/"
+                target="_blank"
+                class="text-link"
                 >piano teacher</a
               >.
             </p>
-            <p>
+            <p class="about__text-p">
               My goal as a web developer is to help you thrive in the online
               world. That's why I offer my services at affordable rates.
             </p>
-            <a href="#contact" class="button">Contact</a>
+            <a href="#contact" class="btn btn--orange">Contact</a>
           </div>
-          <div class="skills">
-            <h3>My Skills</h3>
-            <div class="skill-items">
-              <div class="item">HTML</div>
-              <div class="item">CSS</div>
-              <div class="item">JavaScript</div>
-              <div class="item">Responsive Design</div>
-              <div class="item">Adobe Illustrator</div>
-              <div class="item">Adobe Photoshop</div>
-              <div class="item">Adobe Premier Pro</div>
+          <div class="about__skills">
+            <h3 class="about__skills-title">My Skills</h3>
+            <div class="about__skills-item-container">
+              <div class="about__skills-item">HTML</div>
+              <div class="about__skills-item">CSS</div>
+              <div class="about__skills-item">JavaScript</div>
+              <div class="about__skills-item">Responsive Design</div>
+              <div class="about__skills-item">Adobe Illustrator</div>
+              <div class="about__skills-item">Adobe Photoshop</div>
+              <div class="about__skills-item">Adobe Premier Pro</div>
             </div>
           </div>
         </div>
@@ -165,126 +192,164 @@
 
       <!-- PROJECTS SECTION-->
 
-      <section class="projects-bg" id="projects">
-        <div class="projects">
-          <header>
-            <h2>Projects</h2>
-            <hr />
-            <p>See some of the work I've done.</p>
-          </header>
-          <div class="content">
-            <div class="content-row">
-              <div class="content-row-img">
-                <img
-                  src="images/lakeland.png"
-                  alt="A photo of Lakeland Community Church's website on a laptop screen"
-                />
-              </div>
-              <div class="content-row-text">
-                <h3>Lakeland Community Church</h3>
-                <p>
-                  Lakeland's new site was designed with a grid layout to look
-                  like buttons. The goal was clarity and use of ease so
-                  potential visitors could quickly access what's really
-                  important.
-                </p>
-                <a
-                  href="https://www.lakelandcanton.org/"
-                  target="_blank"
-                  class="button"
-                  >Visit Site</a
-                >
-              </div>
+      <section class="projects">
+        <header class="projects__header">
+          <h2 class="projects__header-title">Projects</h2>
+          <hr class="projects__header-hr" />
+          <p class="projects__header-subtitle">
+            See some of the work I've done.
+          </p>
+        </header>
+        <div class="projects__content-container">
+          <div class="projects__content-row">
+            <div class="projects__content-row-img-container">
+              <img
+                src="assets/images/fulton-county-resources-mac.png"
+                alt="A photo of the Fulton County Resources app."
+                class="projects__content-row-img"
+              />
             </div>
-            <div class="content-row">
-              <div class="content-row-img">
-                <img
-                  src="images/precisionlawns.png"
-                  alt="A photo of Precision Lawn's website on a laptop screen"
-                />
-              </div>
-              <div class="content-row-text">
-                <h3>Precision Lawns</h3>
-                <p>
-                  Disclaimer: Precision Lawn's is my family's lawn care
-                  business. Built with HTML, CSS, and JavaScript, the main
-                  requirement was the integration of an online booking system
-                  and a chat widget.
-                </p>
-                <a
-                  href="https://www.precisionlawns309.com"
-                  target="_blank"
-                  class="button"
-                  >Visit Site</a
-                >
-              </div>
+            <div class="projects__content-row-text">
+              <h3 class="projects__content-row-text-title">
+                Fulton County Resources
+              </h3>
+              <p class="projects__content-row-text-subtitle">
+                Fulton County Resources is a searchable map of resources in
+                Fulton County, including food pantries, housing assistance, and
+                more. Users can complete an application to add their service to
+                the map. I built this web app after going through Jonas
+                Schmedtmann's
+                <em>The Complete JavaScript Course</em>, inspired by his Mapty
+                web app.
+              </p>
+              <a
+                href="https://www.fultoncountyresources.com/"
+                target="_blank"
+                class="btn btn--orange"
+                >Try App</a
+              >
             </div>
-            <div class="content-row">
-              <div class="content-row-img">
-                <img
-                  src="images/webbs.png"
-                  alt="A photo of Precision Lawn's website on a laptop screen"
-                />
-              </div>
-              <div class="content-row-text">
-                <h3>Webb's Valley View Campground</h3>
-                <p>
-                  Built with HTML, CSS, and Javascript, Webb's Valley View
-                  Campground's site features the integration of an online
-                  reservation system with payment gateway and a chat widget.
-                </p>
-                <a
-                  href="https://www.webbsvvcamping.com"
-                  target="_blank"
-                  class="button"
-                  >Visit Site</a
-                >
-              </div>
+          </div>
+          <div class="projects__content-row">
+            <div class="projects__content-row-img-container">
+              <img
+                src="assets/images/lakeland.png"
+                alt="A photo of Lakeland Community Church's website on a laptop screen"
+                class="projects__content-row-img"
+              />
             </div>
-            <div class="content-row">
-              <div class="content-row-img">
-                <img
-                  src="images/carpetnearme.png"
-                  alt="A photo of Precision Lawn's website on a laptop screen"
-                />
-              </div>
-              <div class="content-row-text">
-                <h3>Carpet Near Me</h3>
-                <p>
-                  Carpet Near Me is a carpet installation service that serves
-                  the Chicagoland area. This site features a products page with
-                  filters and the integration of an online booking system.
-                </p>
-                <a
-                  href="https://www.carpetnearme.com/"
-                  target="_blank"
-                  class="button"
-                  >Visit Site</a
-                >
-              </div>
+            <div class="projects__content-row-text">
+              <h3 class="projects__content-row-text-title">
+                Lakeland Community Church
+              </h3>
+              <p class="projects__content-row-text-subtitle">
+                Lakeland's new site was designed with a grid layout to look like
+                buttons. The goal was clarity and use of ease so potential
+                visitors could quickly access what's really important.
+              </p>
+              <a
+                href="https://www.lakelandcanton.org/"
+                target="_blank"
+                class="btn btn--orange"
+                >Visit Site</a
+              >
             </div>
-            <div class="content-row">
-              <div class="content-row-img">
-                <img
-                  src="images/mba.png"
-                  alt="A photo of Mattress by Appointment Canton's website on a laptop screen"
-                />
-              </div>
-              <div class="content-row-text">
-                <h3>Mattress by Appointment Canton</h3>
-                <p>
-                  Mattress by Appointment Canton is a mattress store located in
-                  Canton between Dollar General and Canton Used Furniture. The
-                  site features dynamically loading sections and detailed
-                  individual product pages.
-                </p>
-                <a
-                  href="https://mattressbyappointmentcanton.com/"
-                  target="_blank"
-                  class="button"
-                  >Visit Site</a
-                >
-              </div>
+          </div>
+          <div class="projects__content-row">
+            <div class="projects__content-row-img-container">
+              <img
+                src="assets/images/precisionlawns.png"
+                alt="A photo of Precision Lawn's website on a laptop screen"
+                class="projects__content-row-img"
+              />
+            </div>
+            <div class="projects__content-row-text">
+              <h3 class="projects__content-row-text-title">Precision Lawns</h3>
+              <p class="projects__content-row-text-subtitle">
+                Disclaimer: Precision Lawn's is my family's lawn care business.
+                Built with HTML, CSS, and JavaScript, the main requirement was
+                the integration of an online booking system and a chat widget.
+              </p>
+              <a
+                href="https://www.precisionlawns309.com"
+                target="_blank"
+                class="btn btn--orange"
+                >Visit Site</a
+              >
+            </div>
+          </div>
+          <div class="projects__content-row">
+            <div class="projects__content-row-img-container">
+              <img
+                src="assets/images/webbs.png"
+                alt="A photo of Precision Lawn's website on a laptop screen"
+                class="projects__content-row-img"
+              />
+            </div>
+            <div class="projects__content-row-text">
+              <h3 class="projects__content-row-text-title">
+                Webb's Valley View Campground
+              </h3>
+              <p class="projects__content-row-text-subtitle">
+                Built with HTML, CSS, and Javascript, Webb's Valley View
+                Campground's site features the integration of an online
+                reservation system with payment gateway and a chat widget.
+              </p>
+              <a
+                href="https://www.webbsvvcamping.com"
+                target="_blank"
+                class="btn btn--orange"
+                >Visit Site</a
+              >
+            </div>
+          </div>
+          <div class="projects__content-row">
+            <div class="projects__content-row-img-container">
+              <img
+                src="assets/images/carpetnearme.png"
+                alt="A photo of Precision Lawn's website on a laptop screen"
+                class="projects__content-row-img"
+              />
+            </div>
+            <div class="projects__content-row-text">
+              <h3 class="projects__content-row-text-title">Carpet Near Me</h3>
+              <p class="projects__content-row-text-subtitle">
+                Carpet Near Me is a carpet installation service that serves the
+                Chicagoland area. This site features a products page with
+                filters and the integration of an online booking system.
+              </p>
+              <a
+                href="https://www.carpetnearme.com/"
+                target="_blank"
+                class="btn btn--orange"
+                >Visit Site</a
+              >
+            </div>
+          </div>
+          <div class="projects__content-row">
+            <div class="projects__content-row-img-container">
+              <img
+                src="assets/images/mba.png"
+                alt="A photo of Mattress by Appointment Canton's website on a laptop screen"
+                class="projects__content-row-img"
+              />
+            </div>
+            <div class="projects__content-row-text">
+              <h3 class="projects__content-row-text-title">
+                Mattress by Appointment Canton
+              </h3>
+              <p class="projects__content-row-text-subtitle">
+                Mattress by Appointment Canton is a mattress store located in
+                Canton between Dollar General and Canton Used Furniture. The
+                site features dynamically loading sections and detailed
+                individual product pages.
+              </p>
+              <a
+                href="https://mattressbyappointmentcanton.com/"
+                target="_blank"
+                class="btn btn--orange"
+                >Visit Site</a
+              >
             </div>
           </div>
         </div>
@@ -292,53 +357,55 @@
       <!-- CONTACT SECTION-->
 
       <section class="contact" id="contact">
-        <header>
-          <h2>Contact</h2>
-          <hr />
-          <p>Submit the form below and I will contact you.</p>
+        <header class="contact__header">
+          <h2 class="contact__header-title">Contact</h2>
+          <hr class="contact__header-hr" />
+          <p class="contact__header-subtitle">
+            Submit the form below and I will contact you.
+          </p>
         </header>
-        <div class="contact-form-container">
+        <div class="contact__form-container">
           <form
             action="https://formsubmit.co/d73ca119af3c57b5aa6442722661de77"
             method="POST"
-            class="contact-form"
+            class="contact__form"
             id="contact"
           >
-            <div class="contact-form-field">
-              <label class="contact-form-label" for="name">Name</label>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
               <input
                 type="text"
-                class="contact-form-input"
+                class="contact__form-input"
                 name="name"
                 id="name"
                 placeholder="Enter Your Name"
                 required
               />
             </div>
-            <div class="contact-form-field">
-              <label class="contact-form-label" for="email">Email</label>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
               <input
                 type="text"
-                class="contact-form-input"
+                class="contact__form-input"
                 name="email"
                 id="email"
                 required
                 placeholder="Enter Your Email"
               />
             </div>
-            <div class="contact-form-field">
-              <label class="contact-form-label" for="message">Messsage</label>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Messsage</label>
               <textarea
                 name="message"
                 id="message"
                 cols="30"
                 rows="10"
-                class="contact-form-input"
+                class="contact__form-input"
                 required
                 placeholder="Enter Your Message"
               ></textarea>
             </div>
-            <button type="submit" class="button">Submit</button>
+            <button type="submit" class="btn btn--orange">Submit</button>
           </form>
         </div>
       </section>
@@ -346,14 +413,14 @@
 
     <!-- FOOTER SECTION -->
 
-    <footer>
-      <h4>Curtis Atchley</h4>
-      <p>
+    <footer class="footer">
+      <h4 class="footer__title">Curtis Atchley</h4>
+      <p class="footer__subtitle">
         A front end web developer that helps businesses in central Illinois
         thrive.
       </p>
-      <hr />
-      <p>© Copyright 2023. Made by Curtis Atchley.</p>
+      <hr class="footer__hr" />
+      <p class="footer__copyright">© Copyright 2023. Made by Curtis Atchley.</p>
     </footer>
     <script src="script.js"></script>
   </body>

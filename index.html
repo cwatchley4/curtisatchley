@@ -77,7 +77,7 @@
     </button>
     <header class="header">
       <nav class="header__nav">
-        <div class="header__logo-container">
+        <div class="header__logo">
           <a href="/"
             ><img
               src="assets/icons/logo.svg"
@@ -102,17 +102,17 @@
           <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
-      <div class="header__nav-dropdown-menu">
-        <a href="/" class="header__nav-dropdown-menu-link">Home</a>
-        <a href="#about" class="header__nav-dropdown-menu-link">About</a>
-        <a href="#projects" class="header__nav-dropdown-menu-link">Projects</a>
+      <div class="header__nav-mobile">
+        <a href="/" class="header__nav-mobile-link">Home</a>
+        <a href="#about" class="header__nav-mobile-link">About</a>
+        <a href="#projects" class="header__nav-mobile-link">Projects</a>
         <a
           href="https://billing.stripe.com/p/login/4gw8Abf8M3wIb2E9AA"
           target="_blank"
-          class="header__nav-dropdown-menu-link"
+          class="header__nav-mobile-link"
           >Client Portal</a
         >
-        <a href="#contact" class="header__nav-dropdown-menu-link">Contact</a>
+        <a href="#contact" class="header__nav-mobile-link">Contact</a>
       </div>
     </header>
 
@@ -120,17 +120,15 @@
 
     <main class="main">
       <section class="hero">
-        <div class="hero__content-container">
-          <h1 class="hero__title">Hi, I'm Curtis Atchley</h1>
-          <p class="hero__subtitle">
-            A front end web developer that helps businesses in central Illinois
-            thrive.
-          </p>
-          <a href="#contact" class="btn btn--orange">Contact</a>
-          <div class="hero__mouse">
-            <div class="hero__mouse-outline">
-              <div class="hero__mouse-scroller"></div>
-            </div>
+        <h1 class="hero__title">Hi, I'm Curtis Atchley</h1>
+        <p class="hero__subtitle">
+          A front end web developer that helps businesses in central Illinois
+          thrive.
+        </p>
+        <a href="#contact" class="btn btn--orange">Contact</a>
+        <div class="mouse">
+          <div class="mouse-outline">
+            <div class="mouse-scroller"></div>
           </div>
         </div>
       </section>
@@ -146,7 +144,7 @@
           </p>
         </header>
         <div class="about__content">
-          <div class="about__text-container">
+          <div class="about__text">
             <h3 class="about__text-title">Hi there!</h3>
             <p class="about__text-p">
               I'm a frontend web developer. My skills enable me to build
@@ -200,15 +198,13 @@
             See some of the work I've done.
           </p>
         </header>
-        <div class="projects__content-container">
+        <div class="projects__content">
           <div class="projects__content-row">
-            <div class="projects__content-row-img-container">
-              <img
-                src="assets/images/fulton-county-resources-mac.png"
-                alt="A photo of the Fulton County Resources app."
-                class="projects__content-row-img"
-              />
-            </div>
+            <img
+              src="assets/images/fulton-county-resources-mac.png"
+              alt="A photo of the Fulton County Resources app."
+              class="projects__content-row-img"
+            />
             <div class="projects__content-row-text">
               <h3 class="projects__content-row-text-title">
                 Fulton County Resources
@@ -231,13 +227,11 @@
             </div>
           </div>
           <div class="projects__content-row">
-            <div class="projects__content-row-img-container">
-              <img
-                src="assets/images/lakeland.png"
-                alt="A photo of Lakeland Community Church's website on a laptop screen"
-                class="projects__content-row-img"
-              />
-            </div>
+            <img
+              src="assets/images/lakeland.png"
+              alt="A photo of Lakeland Community Church's website on a laptop screen"
+              class="projects__content-row-img"
+            />
             <div class="projects__content-row-text">
               <h3 class="projects__content-row-text-title">
                 Lakeland Community Church
@@ -256,13 +250,11 @@
             </div>
           </div>
           <div class="projects__content-row">
-            <div class="projects__content-row-img-container">
-              <img
-                src="assets/images/precisionlawns.png"
-                alt="A photo of Precision Lawn's website on a laptop screen"
-                class="projects__content-row-img"
-              />
-            </div>
+            <img
+              src="assets/images/precisionlawns.png"
+              alt="A photo of Precision Lawn's website on a laptop screen"
+              class="projects__content-row-img"
+            />
             <div class="projects__content-row-text">
               <h3 class="projects__content-row-text-title">Precision Lawns</h3>
               <p class="projects__content-row-text-subtitle">
@@ -279,13 +271,11 @@
             </div>
           </div>
           <div class="projects__content-row">
-            <div class="projects__content-row-img-container">
-              <img
-                src="assets/images/webbs.png"
-                alt="A photo of Precision Lawn's website on a laptop screen"
-                class="projects__content-row-img"
-              />
-            </div>
+            <img
+              src="assets/images/webbs.png"
+              alt="A photo of Precision Lawn's website on a laptop screen"
+              class="projects__content-row-img"
+            />
             <div class="projects__content-row-text">
               <h3 class="projects__content-row-text-title">
                 Webb's Valley View Campground
@@ -304,13 +294,11 @@
             </div>
           </div>
           <div class="projects__content-row">
-            <div class="projects__content-row-img-container">
-              <img
-                src="assets/images/carpetnearme.png"
-                alt="A photo of Precision Lawn's website on a laptop screen"
-                class="projects__content-row-img"
-              />
-            </div>
+            <img
+              src="assets/images/carpetnearme.png"
+              alt="A photo of Precision Lawn's website on a laptop screen"
+              class="projects__content-row-img"
+            />
             <div class="projects__content-row-text">
               <h3 class="projects__content-row-text-title">Carpet Near Me</h3>
               <p class="projects__content-row-text-subtitle">
@@ -327,13 +315,11 @@
             </div>
           </div>
           <div class="projects__content-row">
-            <div class="projects__content-row-img-container">
-              <img
-                src="assets/images/mba.png"
-                alt="A photo of Mattress by Appointment Canton's website on a laptop screen"
-                class="projects__content-row-img"
-              />
-            </div>
+            <img
+              src="assets/images/mba.png"
+              alt="A photo of Mattress by Appointment Canton's website on a laptop screen"
+              class="projects__content-row-img"
+            />
             <div class="projects__content-row-text">
               <h3 class="projects__content-row-text-title">
                 Mattress by Appointment Canton

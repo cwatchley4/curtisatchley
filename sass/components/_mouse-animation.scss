@@ -1,0 +1,23 @@
+.mouse {
+  width: 34px;
+  height: 55px;
+
+  &-outline {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+
+  &-scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    animation-name: mouseScroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+    animation-iteration-count: infinite;
+  }
+}

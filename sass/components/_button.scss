@@ -1,0 +1,18 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as v;
+
+.btn {
+  &--orange {
+    @include button(
+      v.$color-primary,
+      v.$color-text-light
+    ); // Using mixin with variables
+  }
+
+  &--white {
+    @include button(
+      v.$color-bg-light,
+      v.$color-primary
+    ); // Using mixin with variables
+  }
+}

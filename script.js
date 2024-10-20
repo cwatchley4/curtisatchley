@@ -61,27 +61,25 @@ systemSettingDark.addEventListener("change", (event) => {
 
 const toggleBtn = document.querySelector(".header__nav-toggle-btn");
 const toggleBtnIcon = document.querySelector(".header__nav-toggle-btn i");
-const dropDownMenu = document.querySelector(".header__nav-dropdown-menu");
+const dropDownMenu = document.querySelector(".header__nav-mobile");
 
 const openDropDownMenu = function () {
-  dropDownMenu.classList.add("header__nav-dropdown-menu--open");
+  dropDownMenu.classList.add("header__nav-mobile--open");
 };
 
 const closeDropDownMenu = function () {
-  dropDownMenu.classList.remove("header__nav-dropdown-menu--open");
+  dropDownMenu.classList.remove("header__nav-mobile--open");
 };
 
 // toggle-btn icon changes from bars to x
 const changeToggleBtnIcon = function () {
-  const isOpen = dropDownMenu.classList.contains(
-    "header__nav-dropdown-menu--open"
-  );
+  const isOpen = dropDownMenu.classList.contains("header__nav-mobile--open");
   toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 };
 
 // toggle-btn click event
 toggleBtn.addEventListener("click", function () {
-  !dropDownMenu.classList.contains("header__nav-dropdown-menu--open")
+  !dropDownMenu.classList.contains("header__nav-mobile--open")
     ? openDropDownMenu()
     : closeDropDownMenu();
   changeToggleBtnIcon();

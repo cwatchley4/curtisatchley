@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as v;
+
+.contact__form-container {
+  padding: 4rem;
+  margin: 5rem auto 0 auto;
+  max-width: 50rem;
+  border-radius: 1rem;
+  text-align: left;
+  box-shadow: 0.8rem 1.6rem 1.6rem hsl(0deg 0% 0% / 0.08);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0.8rem 1.6rem 1.6rem hsl(0deg 0% 0% / 0.15);
+  }
+}
+
+.contact__form {
+  display: block;
+
+  &-field {
+    margin-bottom: 2rem;
+  }
+
+  &-label {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: left;
+  }
+
+  &-input {
+    color: v.$color-text-dark;
+    padding: 1.5rem;
+    width: 100%;
+    border: none;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    background: v.$color-bg-light;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+}

@@ -9,3 +9,74 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.hero,
+.about__header,
+.projects__header,
+.contact__header,
+.footer {
+  text-align: center;
+}
+
+.header__logo-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.header__nav-links {
+  font-weight: 700;
+}
+
+.header__nav-link {
+  font-size: 1.5rem;
+}
+
+.header__nav-mobile-link {
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header__nav-toggle-btn {
+  font-size: 2rem;
+}
+
+.hero__title {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.about__header-title,
+.projects__header-title,
+.contact__header-title {
+  font-size: 4.3rem;
+  text-transform: uppercase;
+}
+
+.hero__subtitle,
+.about__header-subtitle,
+.projects__header-subtitle,
+.contact__header-subtitle {
+  font-size: 2.1rem;
+}
+
+.about__text-title,
+.about__skills-title,
+.projects__content-row-text-title {
+  font-size: 3rem;
+}
+
+.about__text-p,
+.projects__content-row-text-subtitle {
+  font-size: 2rem;
+}
+
+.about__skills-item {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.footer__title {
+  font-size: 1.4rem;
+}

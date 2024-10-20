@@ -1,0 +1,81 @@
+@use "../abstracts/variables" as v;
+
+.projects {
+  padding: 8rem 5rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
+
+  &-hr {
+    margin: 2rem 0;
+    width: 5rem;
+    border: 3px solid v.$color-primary;
+    border-radius: 10px;
+  }
+}
+
+.projects__content {
+  max-width: 100rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 12rem;
+}
+
+.projects__content-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  overflow: hidden;
+
+  &-img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  &-text-title {
+    margin-bottom: 1.5rem;
+  }
+
+  &-text-subtitle {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* PROJECTS RESPONSIVE DESIGN */
+
+@media (max-width: 1050px) {
+  .projects__content-row {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .projects__content-row-text {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .projects__header {
+    margin-bottom: 3rem;
+  }
+}

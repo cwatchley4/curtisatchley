@@ -19,38 +19,46 @@ a {
   text-align: center;
 }
 
-.header__logo-title {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  transition: v.$transition;
+.header {
+  &__logo-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: v.$transition;
+  }
+
+  &__nav-links {
+    font-weight: 700;
+  }
+
+  &__nav-link {
+    font-size: 1.5rem;
+    transition: v.$transition;
+  }
+
+  &__nav-mobile-link {
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: v.$transition;
+  }
+
+  &__nav-toggle-btn {
+    font-size: 2rem;
+    transition: v.$transition;
+  }
 }
 
-.header__nav-links {
-  font-weight: 700;
-}
-
-.header__nav-link {
-  font-size: 1.5rem;
-  transition: v.$transition;
-}
-
-.header__nav-mobile-link {
-  font-size: 1.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: v.$transition;
-}
-
-.header__nav-toggle-btn {
-  font-size: 2rem;
-  transition: v.$transition;
-}
-
-.hero__title {
-  font-size: 5rem;
-  text-transform: uppercase;
-  transition: v.$transition;
+.hero {
+  &__title {
+    font-size: 5rem;
+    text-transform: uppercase;
+    transition: v.$transition;
+  }
+  &__subtitle {
+    font-weight: 400;
+    text-transform: none;
+  }
 }
 
 .about__header-title,
@@ -91,4 +99,10 @@ a {
 .footer__title {
   font-size: 1.4rem;
   transition: v.$transition;
+}
+
+@media (max-width: 523px) {
+  .hero__subtitle {
+    max-width: 260px;
+  }
 }

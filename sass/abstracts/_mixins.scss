@@ -1,14 +1,16 @@
+@use "../abstracts/variables" as v;
+
 @mixin button($bg-color, $text-color) {
   padding: 0.5rem 1rem;
   border: none;
   outline: none;
-  border-radius: 10px;
+  @include border-radius;
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: v.$transition;
   display: inline-block;
   background-color: $bg-color;
   color: $text-color;
@@ -20,4 +22,16 @@
   &:active {
     transform: scale(0.95);
   }
+}
+
+@mixin border-radius {
+  -webkit-border-radius: v.$border-radius;
+  -moz-border-radius: v.$border-radius;
+  -ms-border-radius: v.$border-radius;
+  border-radius: v.$border-radius;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
 }

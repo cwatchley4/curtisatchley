@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as v;
+
 .color-theme-btn {
   background: none;
   border: none;
@@ -8,4 +10,5 @@
   z-index: 5;
   bottom: 2rem;
   left: 2rem;
+  transition: v.$transition;
 }

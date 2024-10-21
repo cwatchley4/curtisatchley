@@ -1,3 +1,4 @@
+@use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
 
 .contact {
@@ -6,8 +7,7 @@
   background-size: cover;
 
   &__header {
-    display: flex;
-    flex-direction: column;
+    @include m.flex-column;
     align-items: center;
     margin-bottom: 8rem;
 
@@ -15,7 +15,8 @@
       margin: 2rem 0;
       width: 5rem;
       border: 3px solid v.$color-primary;
-      border-radius: 10px;
+      @include m.border-radius;
+      transition: v.$transition;
     }
   }
 }

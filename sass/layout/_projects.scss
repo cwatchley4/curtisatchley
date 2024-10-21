@@ -1,17 +1,16 @@
+@use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
 
 .projects {
   padding: 8rem 5rem;
   margin: auto;
-  display: flex;
+  @include m.flex-column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .projects__header {
-  display: flex;
-  flex-direction: column;
+  @include m.flex-column;
   align-items: center;
   margin-bottom: 8rem;
 
@@ -19,14 +18,14 @@
     margin: 2rem 0;
     width: 5rem;
     border: 3px solid v.$color-primary;
-    border-radius: 10px;
+    @include m.border-radius;
+    transition: v.$transition;
   }
 }
 
 .projects__content {
   max-width: 100rem;
-  display: flex;
-  flex-direction: column;
+  @include m.flex-column;
   align-items: start;
   justify-content: center;
   gap: 12rem;
@@ -42,21 +41,23 @@
   &-img {
     max-width: 100%;
     max-height: 100%;
+    transition: v.$transition;
   }
 
   &-text {
-    display: flex;
-    flex-direction: column;
+    @include m.flex-column;
     justify-content: center;
     align-items: start;
   }
 
   &-text-title {
     margin-bottom: 1.5rem;
+    transition: v.$transition;
   }
 
   &-text-subtitle {
     margin-bottom: 1.5rem;
+    transition: v.$transition;
   }
 }
 
@@ -64,8 +65,7 @@
 
 @media (max-width: 1050px) {
   .projects__content-row {
-    display: flex;
-    flex-direction: column;
+    @include m.flex-column;
     align-items: start;
   }
   .projects__content-row-text {

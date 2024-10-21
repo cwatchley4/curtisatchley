@@ -1,3 +1,4 @@
+@use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
 
 .header__nav-mobile {
@@ -8,7 +9,7 @@
   height: 0;
   width: 300px;
   background: v.$color-primary;
-  border-radius: 10px;
+  @include m.border-radius;
   overflow: hidden;
 
   &--open {

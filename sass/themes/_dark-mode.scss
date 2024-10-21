@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as v;
+
+html[data-theme="dark"] {
+  background-color: v.$color-bg-dark;
+  color: v.$color-text-light;
+
+  .hero {
+    background-image: v.$img-bg-dark-stripes;
+    background-size: cover;
+  }
+
+  .mouse {
+    &-outline {
+      border: 0.2rem solid v.$color-text-light;
+    }
+    &-scroller {
+      background-color: v.$color-text-light;
+    }
+  }
+
+  .about__skills-item {
+    background-color: v.$color-bg-light;
+    color: v.$color-text-dark;
+  }
+
+  .contact__form-container {
+    background-color: v.$color-bg-grey;
+  }
+
+  .footer {
+    background-color: v.$color-bg-dark-grey;
+  }
+}

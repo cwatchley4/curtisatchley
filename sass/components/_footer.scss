@@ -1,19 +1,21 @@
+@use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
 
 .footer {
   padding: 2rem 2rem;
-  display: flex;
-  flex-direction: column;
+  @include m.flex-column;
   justify-content: center;
   align-items: center;
 
   &__subtitle {
     margin: 0 2rem;
+    transition: v.$transition;
   }
 
   &__hr {
     width: 80%;
     border-top: 1px v.$color-bg-light;
     margin: 1rem 0;
+    transition: v.$transition;
   }
 }

@@ -3,16 +3,10 @@
 
 .btn {
   &--orange {
-    @include button(
-      v.$color-primary,
-      v.$color-text-light
-    ); // Using mixin with variables
+    @include button(v.$color-primary, v.$color-text-light);
   }
 
   &--white {
-    @include button(
-      v.$color-bg-light,
-      v.$color-primary
-    ); // Using mixin with variables
+    @include button(v.$color-bg-light, v.$color-primary);
   }
 }
